@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            font-color:blue;
+            padding:30px;
+        }
+    </style>
+</head>
+<body bgcolor="#483d8b">
+<form action="/qtnselect/" method="POST" target="iframe_a">
+{% csrf_token %}
+
+    {% for qtn in qtn %}
+        <input type="submit" value="{{ qtn.question_no }}" name="question_no">
+    {% endfor %}
+
+</form>
+<iframe height="70%" width="100%" style="border:none;" name="iframe_a">
+
+</iframe>
+</body>
+</html>

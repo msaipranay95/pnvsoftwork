@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/saveq/" method="POST" target="iframe_a">
+{% csrf_token %}
+<h3 style = 'color:orange'>Add your Question to relative Exam code</h3><br>
+    <input type="hidden" value="{{ sub }}" name="subcode">
+    Subject Code:<input type="button" value="{{ sub }}">
+    Question NO:<input type="number" size ='2' name = 'no'>
+    Question:<input type = 'text' size = '40' name = 'question'>
+    <select name="ecode">
+        {% for code in data %}
+            <option value = '{{code.code}}'>{{code.code}}</option>
+        {% endfor %}
+
+    </select><br>
+    Option1:<input type = 'checkbox' value='ans1' name="c"><input type = 'text' name = 'option1' required>
+    Option2:<input type = 'checkbox' value='ans2' name="c"><input type = 'text' name = 'option2' required><br>
+    Option3:<input type = 'checkbox' value='ans3' name="c"><input type = 'text' name = 'option3' required>
+    Option4:<input type = 'checkbox' value='ans4' name="c"><input type = 'text' name = 'option4' required>
+    <input type = 'submit' value = 'Add To Exam'>
+</form>
+<iframe height = '100%' width = '100%' style = 'border:none;' name = 'iframe_a'>
+</body>
+</html>

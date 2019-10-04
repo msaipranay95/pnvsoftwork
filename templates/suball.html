@@ -1,0 +1,29 @@
+<html>
+<head>
+    <style>
+        div{
+            background-color:blue;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body bgcolor="#483d8b">
+<div align="center">
+    <mark><a href="/subcode/" target="iframe_a" style="color:blue;"><input type = 'button' value = '+Add'></a></mark>
+    <mark><a href="/subdelete/" target="iframe_a" style="color:blue;"><input type = 'button' value = '-Delete'></a></mark>
+    <mark><a href="/subedit/" target="iframe_a" style="color:blue;"><input type = 'button' value = '+/-Edit'></a></mark>
+</div>
+
+<form action="/addq/" method="POST" target="iframe_a">
+{% for code in data %}
+    {% csrf_token %}
+    <a href="/addq/" target="iframe_a"><input type = 'submit' value = '{{ code.code }}' name='ec'></a><br>
+{%endfor%}
+</form>
+
+
+
+
+<iframe height="80%" width="100%" style="border:none;" name="iframe_a"></iframe>
+</body>
+</html>

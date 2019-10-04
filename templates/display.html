@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/submit/" method="POST">
+    {% csrf_token %}
+    {% for qtn in qtn %}
+        {{ qtn.question_no }}
+        {{ qtn.question }}<br>
+        <input type="radio" value="{{ qtn.option1 }}" name="option">{{ qtn.option1 }}
+        <input type="radio" value="{{ qtn.option2 }}" name="option">{{ qtn.option2 }}<br>
+        <input type="radio" value="{{ qtn.option3 }}" name="option">{{ qtn.option3 }}
+        <input type="radio" value="{{ qtn.option4 }}" name="option">{{ qtn.option4 }}
+        <button type="submit" value="{{ qtn.question_no }}" name="question_no">Next</button>
+    {% endfor %}
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor = #fdf5e6>
+
+<form action="/delete/" method="POST">
+  {% csrf_token %}
+  Select Exam Code:
+  <br>
+  <select name="option">
+    <option>--select--</option>
+   {% for option in data %}
+    <option>{{ option.code }}</option>
+   {% endfor %}
+  </select>
+  <input type="submit" value = 'delete'>
+</form>
+
+
+</body>
+</html>

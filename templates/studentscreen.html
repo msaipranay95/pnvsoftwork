@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action = "/studentselection/" method="POST">
+        {% csrf_token %}
+    <table align="center" border="2">
+        <tr> <td>
+            <input type='submit' value='Take Test' name='t1'><br>
+            <input type='submit' value='Mock Test' name='t1'><br>
+            <input type='submit' value='My Profile' name='t1'><br>
+            <input type='submit' value='Results & Notifications' name='t1'><br>
+            <input type='submit' value='Exam Model Questions' name='t1'><br>
+        </td></tr>
+        <!-- <tr><th>
+            <button type="submit"> Logout </button>
+        </th></tr> -->
+        <input type="hidden" value="{{username}}" name="username">
+        <input type="hidden" value="{{date_of_birth}}" name="dob">
+<!-- {{ afc.firstName }} -->
+    </table>
+ </form>
+</body>
+</html>

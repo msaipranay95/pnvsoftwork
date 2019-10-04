@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <style>
+        div{
+            background-color:blue;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body bgcolor = #483d8b>
+<div align = 'center'>
+    <form action="/questionadd/" method="POST" target="iframe_a">
+        {% csrf_token %}
+    <input type="hidden" value = '{{ subcode }}' name="subcode">
+    <input type="submit" value = '+Add Questions' >
+    </form>
+    <a href = '/questionsdm/' target = 'iframe_a' style="color:blue"><input type="button" value = '-Delete/Modify' ></a>
+</div>
+<iframe height = '100%' width = '100%' style = 'border:none;' name = 'iframe_a'>
+
+</iframe>
+</body>
+</html>

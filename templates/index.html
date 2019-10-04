@@ -1,0 +1,188 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BEST | Bharat Excellence Scholarship Test</title>
+	<link rel="icon" type="image/png" href="{% static 'assets/images/favicon.png' %}"/>
+	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+	<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-xs-2 col-lg-2 col-sm-2">
+			    <img src="{% static 'assets/images/ad1.jpg' %}" width="90%" height="90%" style="margin-top:15%;">
+			</div>
+			<div class="col-md-8 col-xs-8">
+				<div style="overflow-wrap: break-word;background-color: #ffffff;">
+					<div class="row">
+						<div class="col-md-12 col-xs-12" style="padding: 0px;">
+							<nav class="navbar navbar-default">
+								<div class="container-fluid">
+									<div class="navbar-header">
+										<a class="nav navbar-left" href="/index/"><img src="{% static 'assets/images/logo.png' %}" class="logo" width="100"/></a>
+									</div>
+									<ul class="nav navbar-nav" style="float: right;margin-top: 2%;">
+										<li class="active"><a href="/index/" style="color: #f29200;">Home</a></li>
+										<li><a href="/about/">About Us</a></li>
+										<li><a href="/syllabus/">Syllabus</a></li>
+										<li><a href="/updates/">Updates</a></li>
+										<li><a href="/contact/">Contact Us</a></li>
+										<li><a href="/login/"> Login </a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+					<div style="text-align: center;">
+            			<img src="{% static 'assets/images/sponsoredaddsbanner.png' %}" width='25%' >
+            		</div>
+				<h3 style="text-align: center;color:blue;margin-top: auto;font-family:Serif;"><span style="font-size: 35px">B</span>HARAT <span style="font-size: 35px" >E</span>XCELLENCE <span style="font-size: 35px">S</span>CHOLARSHIP
+						<span style="font-size: 35px">T</span>EST</h3>
+					<div class="row">
+						<div class="col-md-12 col-xs-12">
+							<div class="btn-group btn-group-justified">
+							    <!--<a href="application.html" class="btn btn-success">Application Form</a>-->
+							    <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                    Application Form<span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+										<li><a href="{% static 'assets/images/application.pdf' %}" >Offline Application</a></li>
+										<li> <a href="/application/"> Online Application </a></li>
+									</ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                    Free Sample Question Papers <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <li><a href="{% static 'assets/Sample/Class-VIpdf'%}" target="_blank">VI Class</a></li>
+                                        <li><a href="{% static 'assets/Sample/Class-VIIpdf'%}" target="_blank">VII Class</a></li>
+                                        <li><a href="{% static 'assets/Sample/Class-VIIIpd'%}" target="_blank">VIII Class</a></li>
+                                        <li><a href="{% static 'assets/Sample/Class-IXpdf' %}" target="_blank">IX Class</a></li>
+                                        <li><a href="{% static 'assets/Sample/Class-Xpdf' %}" target="_blank">X Class</a></li>
+                                    </ul>
+                                 </div>
+							    <a href="/Results/" class="btn btn-success">Results</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-xs-12">
+							<marquee style="margin:3%;color: red;font-size: 18px;" behavior="scroll" scrollamount="3" scrolldelay="1" onMouseOver="this.stop()" onMouseOut="this.start()">Students from 6th to 10th class can only apply for Bharat Excellence Scholarship Test (BEST). Registrations will start soon. For more updates stay tuned to <a href="best.net.in">BEST</a>. Contact No. +91 91338 91339 <sup><img src="{% static 'assets/images/new.gif' %}" width="5"></sup></marquee>
+						</div>
+						<div>
+							<h3 style="color:#640606;font-family:serif;font-weight:bold;"><u>Prize Distribution:</u></h3>
+							<h4 style="text-align: center;">Rewarded with prizes, such as:</h4><hr style="color:red;">
+							<div class="row">
+								<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3" style="border:1px solid black;padding: 5%;background-color: #f29200;">
+									<h4 style="font-weight: bold;">1st Prize</h4><hr>
+									<h4 style="background-color: #900C3F;color: #ffffff;padding: 5%;"><i style="margin-right: 2% ;color:#f29200;font-size:1em;padding:5px;" class="fa fa-money" aria-hidden="true"></i>1,00,000/-</h4>
+									<div  style="text-align:center;">
+									    <img src="{% static 'assets/images/cash.png' %}" width="50%">
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3" style="border:1px solid black;padding: 5%;background-color: #f29200;">
+									<h4 style="font-weight: bold;">2nd Prize</h4><hr>
+									<h4 style="background-color: #900C3F;color: #ffffff;padding: 5%;"><i style="margin-right: 2% ;color:#f29200;font-size:1em;padding:5px;" class="fa fa-laptop" aria-hidden="true"></i>&nbsp;&nbsp;Laptop</h4>
+									<div  style="text-align:center;"><img src="{% static 'assets/images/laptop.png'%}" width="79%"></div>
+								</div>
+								<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3" style="border:1px solid black;padding: 5%;background-color: #f29200;">
+									<h4 style="font-weight: bold;">3rd Prize</h4><hr>
+									<h4 style="background-color: #900C3F;color: #ffffff;padding: 5%;"><i style="margin-right: 2% ;color:#f29200;font-size:1em;padding:5px;" class="fa fa-tablet" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;Tablet</h4>
+									<div  style="text-align:center;">
+									    <img src="{% static 'assets/images/tablet.png' %}" width="73%">
+									</div>
+								</div>
+								<div class="col-md-3 col-xs-3 col-lg-3 col-sm-3" style="border:1px solid black;padding: 5%;background-color: #f29200;">
+									<h4 style="font-weight: bold;">Special<sup>**</sup></h4><hr>
+									<h4 style="background-color: #900C3F;color: #ffffff;padding: 5%;"><i style="margin-right: 2% ;color:#f29200;font-size:1em;padding:5px;" class="fa fa-money" aria-hidden="true"></i>10,000/-</h4>
+									<div style="text-align:center;">
+									    <img src="{% static 'assets/images/cash.png' %}" width="50%">
+									</div>
+								</div>
+							</div>
+							<p style="margin-top:2%;"><u style="font-size:18px;font-weight:bold;">Note:</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Special prize will be awarded to 5 persons (2000/- per person)</p>
+						</div>
+					</div>
+					<div class="row">
+        	<div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+        		<h4 style="color:#640606"><u>Test Pattern</u></h4>
+             <table class="table table-bordered" style="box-shadow: 5px 5px #e8e8e8; ">
+				<thead>
+				  <tr>
+				    <th colspan="2"><h4 style="font-weight:bold;">Test Pattern</h4>
+				    </th>
+
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr >
+				    <td>Maths</td>
+				    <td>30 Marks</td>
+
+				  </tr>
+				  <tr>
+				    <td>English</td>
+				    <td>30 Marks</td>
+
+				  </tr>
+				  <tr >
+				    <td>Science</td>
+				    <td>30 Marks</td>
+
+				  </tr>
+				  <tr >
+				    <td>Arithmetic and Reasoning</td>
+				    <td>30 Marks</td>
+
+				  </tr>
+				  <tr>
+				    <td>Total</td>
+				    <td>120 Marks</td>
+
+				  </tr>
+				  <tr>
+				    <td>TIME DURATION</td>
+				    <td>TWO HOURS</td>
+
+				  </tr>
+				</tbody>
+				</table>
+				<p>*Each Question Carry 1 Mark</p>
+				<!--<p>*No Negative Marking</p>-->
+				</div>
+				</div>
+<div class="row">
+	<div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+		<h4 style="color:#640606"><u>IMPORTANT INSTRUCTIONS FOR ENTRANCE TEST</u></h4>
+			<p>1. Use of Electronic Gadgets is <b><u>NOT</u></b> permissible</p>
+
+			<p>2. Candidates should report to the examination hall half an hour before the start of examination.
+			No entry shall be allowed after test starts.</p>
+			<p>3. Candidates must bring blue ball point pen for filling entries in the answer sheet.</p>
+			<p>4. Exchange of pen/pencil/ sharpener etc is strictly not allowed in the examination hall.</p>
+			<p>5. If the candidate is found in possession of books / any other printed material / any other paper
+			from which he /she might take assistance, he/she is liable to be treated as <b><u>DISQUALIFIED.</u></b></p>
+			Similarly, if the candidate is found giving or obtaining, (or attempting to give or obtain)
+			assistance from any source, he or she is liable to be <b><u>DISQUALIFIED</u></b>.
+			<p>6. A candidate must preserve his / her Hall Ticket until the examination process is over.</p>
+	</div>
+</div>
+					<div class="row">
+    					<div class=" col-md-12 col-sm-12 col-xs-12 col-lg-12">
+    						<hr style="border-top:1px solid red;">
+    						<p style="font-size:100%;text-align:center;"><a href="/index/" style="color:#640606;">Home</a>  |  <a href="/about/" style="color:#640606;">About</a>  |  <a href="/syllabus/" style="color:#640606;">Syllabus</a>  |  <a href="/updates/" style="color:#640606;">Updates</a>  |  <a href="/application/" style="color:#640606;">Application Form</a>  |  <a href="/qtnpapers/" style="color:#640606;">Sample Question Papers</a>  |  <a href="/results/" style="color:#640606;">Results</a>  |  <a href="/contact/" style="color:#640606;">Contact</a></p>
+    						<p style="font-size:100%;text-align:center;"> Designed By <a href="www.pnvsoft.com" target="_blank">PNV Soft Tech</a></p>
+    					</div>
+    				</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-xs-2 col-lg-2 col-sm-2">
+			    <h1 style="margin-top:36%;text-align:center;line-height:150%;border:2px solid #640606;padding:5% 0% 20% 0%;font-size:24px;"><img src="{% static 'assets/images/ritviklogo.png' %}" width="70%">"BEST<br/> is<br/> the<br/> Scholars<br/> Scholarship<br/> Test"</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html></html>
