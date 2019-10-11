@@ -1,0 +1,73 @@
+.testimonial{
+    text-align: center;
+}
+
+.testimonial .pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.testimonial .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.testimonial .testimonial-title{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    color: #0c4767;
+    margin: 0 0 70px 0;
+}
+
+.testimonial .testimonial-title small{
+    font-size: 15px;
+    font-weight: 600;
+    color: #787878;
+}
+
+.testimonial .description{
+    font-size: 14px;
+    color: #787878;
+    line-height: 27px;
+    position: relative;
+    margin: 0;
+}
+.demo
+{
+	padding: 100px 0;
+}
+.heading-title
+{
+	margin-bottom: 100px;
+}
+.testimonial .description:before{
+    content: "\f10d";
+    font-family: fontawesome;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 46%;
+    font-size: 20px;
+    color: #fa7921;
+    line-height:33px;
+    border: 2px solid #fa7921;
+}
+
+.owl-theme .owl-controls .owl-page span{
+    background: #fff;
+    border: 2px solid #0c4767;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span{
+    border: 2px solid #fa7921;
+}@charset "utf-8";
+/* CSS Document */

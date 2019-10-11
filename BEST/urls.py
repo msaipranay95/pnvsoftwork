@@ -37,6 +37,7 @@ urlpatterns = [
     path('studentlogin/',views.studentlogin),
     path('studentselection/',views.studentselection),
     path('examcode/',views.examcode),
+    path('contactus/' ,views.contactus),
     path('examdel/',views.examdelete),
     path('examedit/',views.examedit),
     path('examscreen/',views.examscreen),

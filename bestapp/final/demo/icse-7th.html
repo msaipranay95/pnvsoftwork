@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BEST | Bharat Excellence Scholarship Test</title>
+	<link rel="icon" type="image/png" href="assets/images/favicon1.png"/>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<style>
+	    table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+        }
+        .sidebar-nav {
+        padding: 9px 0;
+        }
+        .dropdown-menu .sub-menu {
+        left: 100%;
+        right: 100%;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        margin-top: 0px;
+        }
+        .dropdown-menu li:hover>.sub-menu {
+        visibility: visible;
+        }
+        .dropdown:hover .dropdown-menu {
+        display: block;
+        }
+        .nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+        margin-top: 0px;
+        }
+        .nav-tabs.active{
+            border-bottom:0px solid #ddd important;
+        }
+        .navbar .sub-menu:before {
+        border-bottom: 7px solid transparent;
+        border-left: none;
+        border-right: 7px solid rgba(0, 0, 0, 0.2);
+        border-top: 7px solid transparent;
+        left: -7px;
+        top: 10px;
+        }
+        .navbar .sub-menu:after {
+        border-top: 6px solid transparent;
+        border-left: none;
+        border-right: 6px solid #fff;
+        border-bottom: 6px solid transparent;
+        left: 10px;
+        top: 11px;
+        left: -6px;
+        }
+        .body{
+            padding-left:20px;
+        }
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+			<div class="col-md-8 col-xs-8 col-lg-8 col-sm-8">
+				<div style="overflow-wrap: break-word;background-color: #ffffff;">
+					<div class="row">
+						<div class="col-md-12 col-xs-12" style="padding: 0px;margin-top: 2%;">
+							<nav class="navbar navbar-default">
+								<div class="container-fluid">
+									<div class="navbar-header">
+										<a class="nav navbar-left" href="index.html"><img src="assets/images/logo.png" class="logo" width="100%"></a>
+									</div>
+									<ul class="nav navbar-nav" style="float: right;margin-top: 2%;">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about.html" >About Us</a></li>
+										<li class="dropdown" style="position:relative;"><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #f29200;">Syllabus</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Class 6th</a>
+                                                    <ul class="dropdown-menu sub-menu">
+                                                        <li><a href="cbse-6th.html">CBSE</a></li>
+                                                        <li><a href="icse-6th.html">ICSE</a></li>
+                                                        <li><a href="ssc-6th.html">STATE</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Class 7th</a>
+                                                    <ul class="dropdown-menu sub-menu" style="margin-top:30px;">
+                                                        <li><a href="cbse-7th.html">CBSE</a></li>
+                                                        <li><a href="icse-7th.html">ICSE</a></li>
+                                                        <li><a href="ssc-7th.html">STATE</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Class 8th</a>
+                                                    <ul class="dropdown-menu sub-menu" style="margin-top:50px;">
+                                                        <li><a href="cbse-8th.html">CBSE</a></li>
+                                                        <li><a href="icse-8th.html">ICSE</a></li>
+                                                        <li><a href="ssc-8th.html">STATE</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Class 9th</a>
+                                                    <ul class="dropdown-menu sub-menu" style="margin-top:60px;">
+                                                        <li><a href="cbse-9th.html">CBSE</a></li>
+                                                        <li><a href="icse-9th.html">ICSE</a></li>
+                                                        <li><a href="ssc-9th.html">STATE</a></li>
+                                                    </ul>
+                                                </li><li><a href="#">Class 10th</a>
+                                                    <ul class="dropdown-menu sub-menu" style="margin-top:70px;">
+                                                        <li><a href="cbse-10th.html">CBSE</a></li>
+                                                        <li><a href="icse-10th.html">ICSE</a></li>
+                                                        <li><a href="ssc-10th.html">STATE</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+										<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Register</a>
+									        <ul class="dropdown-menu" role="menu">
+												<li><a href="assets/images/application.pdf" target="_blank">Offline Application</a></li>
+												<li><a href="application.html" target="_blank">Online Application</a></li>
+									        </ul>
+									    </li>
+										<li><a href="updates.html">Updates</a></li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+					<div style="text-align: center;margin-bottom:2%;">
+						<img src="assets/images/sponsoredaddsbanner.png" width="45%" style="border:1px solid #f29200;padding:15px;box-shadow:5px 5px 18px #e8e8e8;">
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+						<marquee style="margin:3%;color: red;font-size: 18px;" behavior="scroll" scrollamount="3" scrolldelay="1" onMouseOver="this.stop()" onMouseOut="this.start()">Students from 6th to 10th class can only apply for Bharat Excellence Scholarship Test (BEST). Registrations will start soon. For more updates stay tuned to <a href="best.net.in">BEST</a>. Contact No. +91 95043 23456, +91 91693 23456 <sup><img src="assets/images/new.gif" width="5%"></sup></marquee>
+						</div>
+					</div>
+                    <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+                        <h3 style="color:#640606;font-family:serif;font-weight:bold;"><u>ICSE - 7th Class-Syllabus:</u></h3>
+                        <div class="body">
+                            <ul class="nav nav-tabs" role="tablist" style="margin-top:3%;border-color:#ffffff;">
+                                <li role="presentation" class="active">
+                                    <a href="#eng" aria-controls="home" role="tab" data-toggle="tab" style="color:black;font-size:18px;margin-right:20px;border: none;">English</a>     
+                                </li>
+                                <li role="presentation">
+                                    <a href="#science" aria-controls="Science" role="tab" data-toggle="tab" style="color:black;font-size:18px;margin-right:20px;border: none;">Science</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#maths" aria-controls="Maths" role="tab" data-toggle="tab" style="color:black;font-size:18px;margin-right:20px;border: none;">Maths</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#gk" aria-controls="Maths" role="tab" data-toggle="tab" style="color:black;font-size:18px;margin-right:20px;border: none;">General Knowledge</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#reasoning" aria-controls="Maths" role="tab" data-toggle="tab" style="color:black;font-size:18px;margin-right:20px;border: none;">Logical Reasoning</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" style="padding-left:10%;">
+                                <div role="tabpanel" class="tab-pane active" id="eng" >
+                                    <table style="width:100%;margin-top:3%;">
+                                        <tr style="background-color:#000000;color:#ffffff;">
+                                            <th style="text-align:center;">S No.</th>
+                                            <th style="text-align:center;">Chapter</th> 
+                                            <th style="text-align:center;">Topics</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>Nouns</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Proper And Common Nouns</li>
+                                                    <li>Collective,Abstract And Compound Nouns</li>
+                                                    <li>Singular And Plural Nouns</li>
+                                                    <li>Possessive Nouns</li>
+                                                    <li>The Indefinite Article And Nouns</li>
+                                                    <li>The Definite Article And Nouns</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.</td>
+                                            <td>Pronouns</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Personal Pronouns</li>
+                                                    <li>Possessive Pronouns</li>
+                                                    <li>Singular And Plural Nouns</li>
+                                                    <li>Possessive Nouns</li>
+                                                    <li>The Indefinite Article And Nouns</li>
+                                                    <li>The Definite Article And Nouns</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.</td>
+                                            <td>Verbs</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Action And Linking Verbs</li>
+                                                    <li>Transitive And Intransitive Verbs</li>
+                                                    <li>Phrasal Verbs</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.</td>
+                                            <td>Tenses</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Introduction To Tenses</li>
+                                                    <li>The Simple Tense</li>
+                                                    <li>Using The Simple Tense</li>
+                                                    <li>The Continuous Tense</li>
+                                                    <li>Using The Continuous Tense</li>
+                                                    <li>Present And Past Perfect Tenses, And Their Uses</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5.</td>
+                                            <td>Voice</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Active And Passive Voices</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6.</td>
+                                            <td>Adjectives</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Adjectives Of Qualityes, Quantityes And Number</li>
+                                                    <li>Possessive Adjectives</li>
+                                                    <li>The Positive, Comparative And Superlative Forms Of Adjectives</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7.</td>
+                                            <td>Adverbs</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Adverbs Of Manner And Degree</li>
+                                                    <li>Adverbs Of Time And Frequencyes</li>
+                                                    <li>Adverbs Of Time And Frequencyes</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8.</td>
+                                            <td>Sentence And Phrase</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Difference Between A Sentence And A Phrase</li>
+                                                    <li>The Subject And Predicate Of A Sentence</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9.</td>
+                                            <td>Reported Speech</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Introduction To Reported Speech</li>
+                                                    <li>Reported Statements</li>
+                                                    <li>Reported Commands</li>
+                                                    <li>Reported Questions</li>
+                                                    <li>Conversion Of Tenses</li>
+                                                    <li>Changes In The Expressions Of Time</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>10.</td>
+                                            <td>Subject-Verb Agreement</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Subject-Verb Agreement Rules</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11.</td>
+                                            <td>Framing Questions</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Wh- Questions</li>
+                                                    <li>Yes-No Questions</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12.</td>
+                                            <td>Prepositions</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Introduction To Prepositions</li>
+                                                    <li>Prepositions Of Time</li>
+                                                    <li>Prepositions Of Place, Position Or Location</li>
+                                                    <li>Prepositions Of Direction Or Movement</li>
+                                                    <li>Other Relations Shown Byes Prepositions</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>13.</td>
+                                            <td>Conjunction</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Introduction To Conjunctions</li>
+                                                    <li>Common Conjunctions 1</li>
+                                                    <li>Common Conjunctions 2</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>14.</td>
+                                            <td>Punctuations</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Introduction To Punctuations</li>
+                                                    <li>Punctuation Marks 1</li>
+                                                    <li>Punctuation Marks 2</li>
+                                                    <li>Punctuation Marks 3</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>15.</td>
+                                            <td>Passage Reading</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Passage Reading</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>16.</td>
+                                            <td>Poem Reading</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Poem Reading</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>17.</td>
+                                            <td>Writing A Notice</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Writing A Notice</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>18.</td>
+                                            <td>Dialogue Writing</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Dialogue Writing</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>19.</td>
+                                            <td>Letter Writing</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Letter Writing</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>20.</td>
+                                            <td>Article Writing</td> 
+                                            <td>
+                                                <ol>
+                                                    <li>Article Writing</li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="maths">
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="science">
+                                    <h4></h4>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="gk">
+                                    <h4></h4>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="reasoning">
+                                    <h4></h4>
+                                </div>
+                            </div>
+                        </div>
+    				<div class="row">
+    					<div class=" col-md-12 col-sm-12 col-xs-12 col-lg-12">
+    						<hr style="border-top:1px solid red;">
+    						<p style="font-size:100%;text-align:center;"><a href="index.html" style="color:#640606;">Home</a>  |  <a href="about.html" style="color:#640606;">About</a>  |  <a href="syllabus.html" style="color:#640606;">Syllabus</a>  |  <a href="updates.html" style="color:#640606;">Updates</a>  |  <a href="application.html" style="color:#640606;">Application Form</a>  |  <a href="qtnpapers.html" style="color:#640606;">Sample Question Papers</a>  |  <a href="Results.html" style="color:#640606;">Results</a>  |  <a href="contact.html" style="color:#640606;">Contact</a></p>
+    						<p style="font-size:100%;text-align:center;"> Designed By <a href="www.pnvsoft.com" target="_blank">PNV Soft Tech</a></p>
+    					</div>
+    				</div>
+    					
+    			</div>
+			</div>
+			<div class="col-md-2 col-xs-2 col-lg-2 col-sm-2"></div>
+		</div>
+	</div>
+</body>
+</html>

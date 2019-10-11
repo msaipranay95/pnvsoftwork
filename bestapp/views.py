@@ -304,3 +304,5 @@ def submit(request):
         return HttpResponse('<h4>Wrong Answer</h4>')
 
 
+def contactus(request):
+    return render(request, 'contactus.html')
